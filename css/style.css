@@ -21,7 +21,7 @@ p {
     margin: 10vh 10vw;
     grid-template-columns: 1fr 1fr;
     /* divide the areas that will be used on the other components */
-    grid-template-areas:"h h" 
+    grid-template-areas:"m m" 
                         "l r" 
                         "f f";
 
@@ -30,7 +30,7 @@ p {
 .main {
     background-color: white;
     border-radius: 10px 10px 0 0;
-    grid-area: h;
+    grid-area: m;
 }
 
 .main h2 {
@@ -61,16 +61,12 @@ p {
     background-color: hsl(179, 50%, 50%);
     grid-area: r;
     border-radius: 0 0 10px 0;
-
+    padding-bottom: 5vh;
 }
 
 .aside-right p {
     color: hsl(204, 43%, 93%);
     margin: 5px;
-}
-
-.last-paragraph {
-    margin-bottom: 50px;
 }
 
 span {
@@ -106,4 +102,25 @@ footer {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        margin: 5vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"m" 
+                            "l" 
+                            "r"
+                            "f";
+    }
+
+    .aside-left {
+        border-radius: 0;
+        padding-bottom: 5vh;
+    }
+
+    .aside-right {
+        border-radius: 0 0 10px 10px;
+    }
 }
