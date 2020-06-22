@@ -1,0 +1,109 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    padding-left: 30px;
+}
+
+h3 {
+    padding-left: 30px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+.container {
+    display: grid;
+    margin: 10vh 10vw;
+    grid-template-columns: 1fr 1fr;
+    /* divide the areas that will be used on the other components */
+    grid-template-areas:"h h" 
+                        "l r" 
+                        "f f";
+
+}
+
+.main {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    grid-area: h;
+}
+
+.main h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.main h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+
+.main p {
+    color: hsl(218, 22%, 67%);
+}
+
+.aside-left {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: l;
+    border-radius: 0 0 0 10px;
+
+}
+
+.aside-left p {
+    color: hsl(204, 43%, 93%);
+}
+
+.aside-right {
+    background-color: hsl(179, 50%, 50%);
+    grid-area: r;
+    border-radius: 0 0 10px 0;
+
+}
+
+.aside-right p {
+    color: hsl(204, 43%, 93%);
+    margin: 5px;
+}
+
+.last-paragraph {
+    margin-bottom: 50px;
+}
+
+span {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.sign-up {
+    background-color: hsl(71, 73%, 54%);
+    width: 70%;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 6vw;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+}
+
+footer {
+    grid-area: f;
+}
+
+.white-title {
+    color: white;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
