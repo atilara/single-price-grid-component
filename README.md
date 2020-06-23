@@ -21,7 +21,7 @@ Mobile version, where I'm mostly improving my skills on responsive websites.
 
 ### 🛠 Deploy
 
-This simple website will be deployed using [Vercel](https://vercel.com).
+This simple website is being deployed using [Vercel](https://vercel.com), on this [link](https://single-price-grid-component-weld.vercel.app).
 
 ### 📄 License
 
