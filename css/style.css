@@ -4,15 +4,15 @@ body {
     font-size: 16px;
 }
 
-h2 {
+.main h2, .aside-left h2, .aside-right h2 {
     padding-left: 30px;
 }
 
-h3 {
+.main h3, .aside-left h3, .aside-right h3 {
     padding-left: 30px;
 }
 
-p {
+.main p, .aside-left p, .aside-right p {
     padding-left: 30px;
 }
 
